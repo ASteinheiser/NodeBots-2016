@@ -13,27 +13,6 @@ feather.on('ready', function() {
   var left = new five.Servo.Continuous(14)
   var right = new five.Servo.Continuous(13)
 
-  var turnLeft = function() {
-    left.cw(1)
-    right.cw(1)
-  }
-  var turnRight = function() {
-    left.ccw(1)
-    right.ccw(1)
-  }
-  var forward = function() {
-    left.cw(1)
-    right.ccw(1)
-  }
-  var reverse = function() {
-    left.ccw(1)
-    right.cw(1)
-  }
-  var stop = function() {
-    left.cw(0)
-    right.cw(0)
-  }
-
   keypress(process.stdin)
 
   process.stdin.on('keypress', function (ch, key) {
@@ -41,19 +20,20 @@ feather.on('ready', function() {
       process.exit()
     }
     if (key && key.name == 'up') {
-      forward()
+      left.cw(1)
+      right.ccw(1)
     }
     if (key && key.name == 'down') {
-      reverse()
+      left.ccw(1)
+      right.cw(1)
     }
     if (key && key.name == 'left') {
-      turnLeft()
+      left.cw(1)
+      right.cw(1)
     }
     if (key && key.name == 'right') {
-      turnRight()
-    }
-    if (key && key.name == 'space') {
-      stop()
+      left.ccw(1)
+      right.ccw(1)
     }
   })
 })
