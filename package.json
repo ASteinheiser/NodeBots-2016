@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ASteinheiser/NodeBots-2016#readme",
   "dependencies": {
-    "johnny-five": "^0.9.60"
+    "johnny-five": "^0.9.60",
+    "net": "^1.0.2"
   }
 }
