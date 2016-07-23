@@ -28,12 +28,12 @@ feather.on('ready', function() {
       right.cw(1)
     }
     if (key && key.name == 'left') {
-      left.cw(1)
-      right.cw(1)
-    }
-    if (key && key.name == 'right') {
       left.ccw(1)
       right.ccw(1)
+    }
+    if (key && key.name == 'right') {
+      left.cw(1)
+      right.cw(1)
     }
   })
 })
