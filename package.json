@@ -1,0 +1,25 @@
+{
+  "name": "nodebot-2016",
+  "version": "1.0.0",
+  "description": "This is my nodebot for 2016!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"No Test, but you good\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ASteinheiser/NodeBots-2016.git"
+  },
+  "keywords": [
+    "johnny-five"
+  ],
+  "author": "Andrew Steinheiser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ASteinheiser/NodeBots-2016/issues"
+  },
+  "homepage": "https://github.com/ASteinheiser/NodeBots-2016#readme",
+  "dependencies": {
+    "johnny-five": "^0.9.60"
+  }
+}
